@@ -1,0 +1,44 @@
+{
+  "name": "bebe-sanity-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node utils/clearReport.js && npx playwright test",
+    "test:homepage": "node utils/clearReport.js && npx playwright test tests/homepage/homepage.spec.js",
+    "test:blog": "node utils/clearReport.js && npx playwright test tests/blog/blog-listing.spec.js",
+    "test:alp": "node utils/clearReport.js && npx playwright test tests/alp/alp.spec.js",
+    "test:login": "node utils/clearReport.js && npx playwright test tests/login/login.spec.js",
+    "test:signup": "node utils/clearReport.js && npx playwright test tests/signup/signup.spec.js",
+    "custom-report": "node utils/archiveResults.js && node utils/verifyResults.js && node utils/normalizeResults.js && node utils/generateCustomReport.js",
+    "show-report": "npx playwright show-report reports/html-report",
+    "generate:excel-report": "node utils/generateExcelReport.js",
+    "clear-report": "node utils/clearReport.js",
+    "report:expected": "node utils/generateExpectedReport.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AEMCS/BEBE-Sanity-Automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AEMCS/BEBE-Sanity-Automation/issues"
+  },
+  "homepage": "https://github.com/AEMCS/BEBE-Sanity-Automation#readme",
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "exceljs": "^3.4.0",
+    "lodash": "^4.18.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.0",
+    "@types/node": "^25.9.1",
+    "allure-commandline": "^2.42.1",
+    "allure-playwright": "^3.10.0",
+    "monocart-reporter": "^2.13.1",
+    "playwright-excel-reporter": "^1.0.5"
+  }
+}

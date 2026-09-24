@@ -1,0 +1,36 @@
+{
+  "search": {
+    "validKeyword": "skincare",
+    "alternativeKeywords": ["sunscreen", "face wash", "moisturizer"],
+    "invalidKeyword": "xyz12345invalid"
+  },
+  "mobileNumbers": {
+    "valid": ["9876543210", "9123456789", "8765432109"],
+    "invalid": ["123", "12345", "abcdefghij", "9876", "98765432101"],
+    "nonIndian": ["1234567890", "5555555555"]
+  },
+  "emails": {
+    "valid": ["test@example.com", "user@bebeautiful.in"],
+    "invalid": ["test@", "@example.com", "invalid"]
+  },
+  "otp": {
+    "validFormat": "123456",
+    "validPatterns": ["000000", "999999", "123456"]
+  },
+  "filters": {
+    "skinTypes": ["oily", "dry", "combination", "sensitive"],
+    "concerns": ["acne", "pigmentation", "anti-aging", "hydration"]
+  },
+  "pagination": {
+    "expectedItemsPerPage": 12,
+    "defaultSortOption": "relevance"
+  },
+  "expectedTexts": {
+    "joinClub": "Join the club",
+    "thankYou": "Thank You",
+    "diveIn": "Dive In",
+    "feelsGood": "Feels good to see you again",
+    "getStarted": "Let's get you started",
+    "copyright": "©2026 BeBeautiful"
+  }
+}

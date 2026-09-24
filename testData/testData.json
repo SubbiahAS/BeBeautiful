@@ -1,0 +1,19 @@
+{
+  "search": {
+    "validKeyword": "serum",
+    "invalidKeyword": "xyz123"
+  },
+
+  "articles": {
+    "articleUrl": "https://www.bebeautiful.in/all-things-skin/skin-type/sunscreen-for-oily-skin"
+  },
+
+  "users": {
+    "email": "test@gmail.com",
+    "password": "Test@123"
+  },
+
+  "products": {
+    "productName": "Lakme Shampoo"
+  }
+}
